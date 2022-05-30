@@ -1,0 +1,3226 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PM KUSUM</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css"> -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!-- js -->
+	<!-- <script src="js/jquery-1.11.1.min.js"></script> -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- //js -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+	<!-- start-smoth-scrolling -->
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+
+
+	<!-- start-smoth-scrolling -->
+</head>
+<style>
+	.disclaimerModal .modal-content {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(254, 132, 2), rgba(245, 221, 10, 0.67)), url(images/file_s-1617862471490.jpg);
+    background-size: cover;
+    height: 430px;
+    position: relative;
+}
+	.disclaimerModal {
+		width: 900px !important;
+		margin: 50px auto !important;
+	}
+
+	.disclaimerModal .modal-title {
+		text-align: center;
+		color: #004178;
+		font-weight: bold;
+		font-size: 20px;
+		width: 100%;
+	}
+
+	.disclaimerModal strong {
+		width: 90%;
+		margin: 0 auto;
+		/* font-size: 2rem; */
+		font-size: 24px;
+		font-weight: bold;
+		color: #fff;
+		background: #004178;
+		border-radius: 10px;
+		padding: 10px;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		right: 0;
+	}
+
+	#home img {
+		width: 100%;
+
+
+	}
+
+	#map {
+		height: 100%;
+		position: unset !important;
+		overflow: unset !important;
+	}
+
+	.panel-default>.panel-heading {
+		color: #fff !important;
+		background-color: #1463bc !important;
+		border-color: #ddd !important;
+	}
+
+	.panel-group {
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+
+	.panel-group .panel .panel-heading h6 a:not(.collapsed) i:before {
+		content: "" !important;
+	}
+
+	.dai {
+		width: 575px;
+	}
+
+	@media(max-width:767px) {
+		.dai {
+			width: 90%;
+		}
+	}
+
+	nav ul ul {
+		margin: 0;
+		display: block;
+		background: rgba(69, 69, 69, .6);
+		padding: 7px 0;
+	}
+
+	#map {
+		height: 100%;
+	}
+
+	.loginBtn {
+		font-size: 16px;
+		font-weight: bold;
+		background: #5a96e2;
+		border-radius: 3px;
+		border: none;
+		outline: none !important;
+		color: white;
+
+	}
+
+	.bg-color {
+		background: #039bf3 !important;
+		color: white;
+	}
+
+	.loginBtn:hover,
+	.loginBtn:focus {
+		background: #179b81;
+	}
+
+	.value>p {
+		font-size: 12px;
+	}
+
+	.trigger-btn:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 15px white;
+		color: white;
+		box-shadow: 0 0 5px white;
+		text-shadow: 0 0 5px white
+	}
+
+	.modal-login {
+		border: 5px;
+		border-radius: 10px 10px 10px 10px;
+		box-shadow: black 0px 0px 8px;
+		width: 450px;
+		top: 80px;
+	}
+
+	nav ul li.active>a:before {
+		content: "" !important;
+		font-family: FontAwesome;
+		display: block;
+		height: 27px;
+		line-height: normal;
+		width: 27px;
+		position: absolute;
+		right: -21px;
+		font-size: 20px;
+		color: #eee;
+	}
+
+	.modal-login .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+
+	.modal-login .modal-header {
+		border-bottom: none;
+		position: relative;
+		justify-content: center;
+	}
+
+	.modal-login .close {
+		color: white;
+		position: absolute;
+		top: -10px;
+		right: -10px;
+	}
+
+	.modal-login h4 {
+		color: #636363;
+		text-align: center;
+		font-size: 26px;
+		margin-top: 0;
+	}
+
+	.modal-login .modal-content {
+		color: #999;
+		border-radius: 1px;
+		margin-bottom: 15px;
+		background: rgba(0, 0, 0, 0.48);
+		border: 1px solid #633737;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0);
+		padding: 25px;
+		color: #999;
+		border-radius: 1px;
+		margin-bottom: 15px;
+		background: rgba(16, 63, 118, 0.9);
+		border: 1px solid #633737;
+		box-shadow: 0px 0px 0px rgb(0, 0, 0);
+		padding: 25px;
+	}
+
+	.modal-login .form-group {
+
+		margin-bottom: 20px;
+	}
+
+	.modal-login label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+
+	.modal-login .form-control {
+		min-height: 38px;
+		padding-left: 5px;
+		box-shadow: none !important;
+		border-width: 0 0 1px 0;
+		border-radius: 0;
+	}
+
+	.modal-login .form-control:focus {
+		border-color: #ccc;
+	}
+
+	.modal-login .input-group-addon {
+		max-width: 42px;
+		text-align: center;
+		background: none;
+		border-width: 0 0 1px 0;
+		padding-left: 5px;
+		border-radius: 0;
+		color: white !important;
+	}
+
+	.modal-login .btn {
+		font-size: 16px;
+		font-weight: bold;
+		background: #5a96e2;
+		border-radius: 3px;
+		border: none;
+		min-width: 140px;
+		outline: none !important;
+	}
+
+	/* .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px white;
+            color: white;
+            box-shadow: 0 0 5px white;
+            text-shadow: 0 0 5px white
+        } */
+
+	.modal-login .btn:hover,
+	.modal-login .btn:focus {
+		background: #179b81;
+	}
+
+	.modal-login .hint-text {
+		text-align: center;
+		padding-top: 5px;
+		font-size: 13px;
+	}
+
+	.modal-login .modal-footer {
+		color: #999;
+		border-color: #dee4e7;
+		text-align: center;
+		margin: 0 -25px -25px;
+		font-size: 13px;
+		justify-content: center;
+	}
+
+	.modal-login a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.modal-login a:hover {
+		text-decoration: none;
+	}
+
+	.modal-login a {
+		color: #19aa8d;
+		text-decoration: none;
+	}
+
+	.modal-login a:hover {
+		text-decoration: underline;
+	}
+
+	.modal-login .fa {
+		font-size: 21px;
+	}
+
+	.trigger-btn {
+		display: inline-block;
+		/* margin: 100px auto; */
+	}
+
+	.form-control {
+		background-color: #35415000;
+	}
+
+	.value-txt {
+		width: 100%;
+		padding-left: 10%;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	.form-control {
+		color: white;
+	}
+
+	.glow:hover {
+
+		text-shadow: 0 0 15px #bc2a8d;
+
+		transition: ease-in;
+		/* -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate; */
+	}
+
+	.input-group {
+		position: relative;
+		display: inline-table;
+		border-collapse: separate;
+	}
+
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+
+	}
+
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px !important;
+
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+
+	@media(max-width:767px) {
+		table {
+			overflow: scroll;
+			display: block;
+		}
+	}
+
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		/* height: 400px;
+		display: block;
+		overflow-y: scroll; */
+	}
+	/* table caption {
+    background: #ddd;
+    width: 95%;
+    text-align: center;
+} */
+</style>
+
+<body onload>
+	 
+	<!-- header -->
+	<div class="header">
+		<div class="agileits_header">
+			<div class="container">
+
+				<div class="agile-login">
+					<ul>
+						<!-- <li><a href="registered.html"> Create Account </a></li> -->
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+						<!-- <li><a href="#" data-toggle="modal" data-target="#help">Help</a></li> -->
+
+					</ul>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" style="color: white;">PM-KUSUM</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<form id="login-form">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+									<input type="text" class="form-control" name="username" placeholder="Username" id="username" required="required" autocomplete="off">
+
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+									<input type="password" class="form-control" name="password" placeholder="Password" id="password" required="required" autocomplete="off">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group" style="margin: 0% 25%;">
+									<div id="captcha"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group" style="margin: 0% 25%;">
+									<span class="input-group-addon" id="refCaptcha"><i class="fa fa-refresh"></i></span>
+									<input type="text" class="form-control" name="captcha" placeholder="Captcha Code" id="capCode" required="required" autocomplete="off">
+
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-block btn-lg" id="btnlogIn" style="  border: 5px;border-radius: 10px 10px 10px 10px;box-shadow:#5a96e2 0px 0px 8px;">Sign
+									In</button>
+							</div>
+							<p class="hint-text"><a href="forgot.html" style="color: white;">Forgot Password?</a></p>
+						</form>
+					</div>
+					<!-- <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div> -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="logo_products" style="background-image: url(images/banner_bg.png);">
+
+			<!-- <div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>call us : (+0123) 234 567</li>
+					
+				</ul>
+			</div> -->
+			<div class="logo_con">
+				<div class="w3l_search1">
+					<img src="images/unnamed2.png" class="img-pm">
+				</div>
+				<div class="w3ls_logo_products_left">
+					<h1><a href="index.html">Pradhan Mantri Kisan Urja Suraksha Evam Utthan Mahabhiyan<br>
+							<!-- <span>( Scheme of Govt. of India for Rural Electrification )</span> -->
+						</a></h1>
+				</div>
+
+				<button class="btn_login1"><a href="#" data-toggle="modal" data-target="#myModal">Login</a></button>
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+		<!-- //header -->
+		<!-- navigation -->
+		<div class="navigation-agileits" id="myHeader">
+
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav2" id="top-menu">
+						<li class="active" id="m1"><a href="landing.html" class="act">Home</a></li>
+						<!-- Mega Menu -->
+						<li id="m2"><a href="landing-about.html" class="act">About Scheme</a></li>
+						<li id="m3"><a href="landing-events.html" class="act">Events & Meetings</a></li>
+						<!-- <li id="m4"><a href="#" class="act">advertisements</a></li>	 -->
+						<li>
+							<a class="act" href="landing-faq.html">FAQs</a>
+
+						</li>
+						<li>
+							<a class="act" href="landing-documents.html">Documents</a>
+
+						</li>
+						<li id="m6"><a href="landing-contact.html" class="act">Contact Us</a></li>
+						<li class="dropdown">
+
+							<a class="dropdown-toggle act" data-toggle="dropdown" href="#">State Portal Links<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<!-- <div class="col-md-3" style="    border-right: 1px solid #e3e2e2;">
+											<li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Andhra Pradesh</a></li>
+											<li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Assam</a></li>
+											<li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Bihar</a></li>
+											<li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Delhi</a></li>
+
+											
+										</div> -->
+											<div class="col-md-3" style="    border-right: 1px solid #e3e2e2;">
+												<!-- <li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Goa</a></li> -->
+												<!-- <li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Himachal</a></li> -->
+												<li id="Guidelines1"><a href="https://pmkusum.guvnl.com" target="_blank">Gujrat</a></li>
+												<li id="Guidelines1"><a href="https://pmkusum.hareda.gov.in" target="_blank">Haryana</a></li>
+												<li id="Guidelines1"><a href="https://pmkusum.peda.gov.in" target="_blank">Punjab</a></li>
+
+											</div>
+											<div class="col-md-3" style="    border-right: 1px solid #e3e2e2;">
+												<!-- <li id="Guidelines1"><a href="http://webserver.hkapl.in:2048/" target="_blank">Jharkhand</a></li> -->
+												<li id="Guidelines1"><a href="https://pmkusum.rajasthan.gov.in/" target="_blank">Rajasthan</a></li>
+												<li id="Guidelines1"><a href="https://pmkusum.tn.gov.in/" target="_blank">Tamilnadu</a></li>
+												<li id="Guidelines1"><a href="https://pmkusum.tripura.gov.in/" target="_blank">Tripura</a></li>
+
+											</div>
+											<div class="col-md-3">
+												<li id="Guidelines1"><a href="https://uppmkui.hkapl.in/" target="_blank">Uttar Pradesh</a></li>
+											</div>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Public Information<b class="caret"></b></a>
+							<ul class="dropdown-menu  columns-3" style=" min-width: 340px !important;">
+								<div class="row">
+									<div class="multi-gd-img">
+										<ul class="multi-column-dropdown">										 
+											<div class="col-md-3" style="border-right: 1px solid #e3e2e2;min-width: 340px !important;">
+												 
+												<li id="Guidelines1"><a href="landing-Public_Information.html">Scheme Beneficiary List</a></li>
+												<li id="Guidelines1"><a href="Supplier_Quality_Test_Report.html">Test Report of Solar Pumping System / Module Mounting Structure (MMS)</a></li>
+												<li id="servicecenterReport"><a href="service_center_Report.html">Service Center Report</a></li>
+												<li id="StateImplementingAgencies"><a href="State_Implementing_Agencies.html">State wise Implementing Agencies</a></li>
+											</div>
+										 
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+						<!-- <li>
+							<a class="act" href="landing-Public_Information.html">Public Information</a>
+
+						</li> -->
+						<!-- <li id="m8"><a href="Publicity.html" class="act">Publicity</a></li> -->
+
+						<!-- <li id="m7"><a href="landing-farmer_registration.html" class="act">Farmer Registration</a></li> -->
+						<!-- <marquee direction="left" behavior="scroll" scrollamount="10">
+							<li id="m7" class="active"><a style="max-width: 56% !important;" href="landing-farmer_registration.html" class="act"><center style="font-weight: 700; font-size: large;">Loan Application Intrest from for setting up Solar Plant Under PM-KUSUM Component-A</center></a></li>
+						</marquee> -->
+
+					</ul>
+
+				</div>
+			</nav>
+
+		</div>
+
+		<div class="navigation-agileits" id="myHeader1">
+			<nav class="navbar navbar-default">
+				<div class="collapse navbar-collapse" style="background-color: white;" id="bs-megadropdown-tabs">
+					<marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" scrollamount="15">
+						<li id="m7" type class="active" style="margin-bottom: 15px !important;">
+							<a style="width: 44%;" href="landing-farmer_registration.html" class="act">
+								<center style="font-weight: 700; color: blue; font-size: x-large; text-decoration: underline;">
+									Loan Application Interest Form for Setting Up Solar Plant Under PM-KUSUM Component-A
+								</center>
+							</a>
+						</li>
+					</marquee>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+
+	<!-- //navigation -->
+	<!-- main-slider -->
+	<div class="content">
+		<div class="comp">
+			<div class="comonetsslide">
+				<div class="md-layout">
+					<div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25" style="min-width: 26.333333%;" !important>
+						<div class="md-card md-card-stats md-theme-default" style="    border: 2px solid #11b7cc;">
+							<div class="md-card-header md-card-header-icon md-card-header-blue">
+								<!-- <div class="card-icon"><img src="img/landing/images.png" class="img-icon"></div> -->
+								<p class="category">Component A</p>
+								<p style="font-size:x-small;text-align: center;"><span style="color: red;">*</span> Achievements as on 30.04.2022 </p>
+
+							</div>
+							<div class="md-card-actions md-alignment-left">
+								<!-- <div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Solar Plants Installed</label><br>
+										<span class="spanSolar" id="cmpaTSPI" style="color: #11b7cc;font-weight: bold;">
+											-
+										</span>
+									</div>
+								</div> -->
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee; padding: 9px !important;">
+									<div class="stats">
+										<label class="labelSolar">Total Sanctioned Solar Capacity (MW)</label><br>
+										<span class="spanSolar" id="cmpaTSCdummy" style="color: #11b7cc;font-weight: bold;">
+											4909
+										</span>
+
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 9px !important;">
+									<div class="stats">
+										<label class="labelSolar">Total Installed Solar Capacity (MW)</label><br>
+										<span class="spanSolar" id="cmpaTSCdummy" style="color: #11b7cc;font-weight: bold;">
+											42.75
+										</span>
+
+									</div>
+								</div>
+								<!-- <div class="col-md-12 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Solar Capacity (MW)</label><br>
+										<span class="spanSolar" id="cmpaTSC" style="color: #11b7cc;font-weight: bold;">
+											-
+										</span>
+
+									</div>
+								</div> -->
+
+
+							</div>
+							<!-- <div class="status_btn" style="background: #11b7cc;">
+								<a data-toggle="modal" data-target="#comA" href="#" title="Show More">State Wise
+									Details</a>
+							</div> -->
+							<div class="status_btn" style="background: #11b7cc;">
+								<a data-toggle="modal" data-target="#comAdummy" href="#" title="Show More">State Wise
+									Details</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25" style="min-width: 26.333333%;" !important>
+						<div class="md-card md-card-stats md-theme-default" style="border: 2px solid #e0296a;">
+							<div class="md-card-header md-card-header-icon md-card-header-blue">
+								<!-- <div class="card-icon"><img src="img/landing/images.png" class="img-icon"></div> -->
+								<p class="category">Component B</p>
+								<p style="font-size:x-small;text-align: center;">
+									<span style="color: red;">*</span> Achievements as on 30.04.2022 </p>
+								<!-- <p style="font-size:x-small;text-align: center;"><span style="color: red;">*</span>Integration with state portal is in progress.</p> -->
+							</div>
+							<div class="md-card-actions md-alignment-left">
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Sanctioned Standalone Pumps Installed (Nos)</label><br>
+										<span class="spanSolar" id="cmpbTSAPIdummy" style="color: #e0296a;font-weight: bold;">
+											359462
+										</span>
+
+									</div>
+									</div>
+									<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Installed Standalone Pumps (Nos)</label><br>
+										<span class="spanSolar" id="cmpbTSAPIdummy" style="color: #e0296a;font-weight: bold;">
+											97463
+										</span>
+
+									</div>
+									<!-- <div class="stats">
+										<label class="labelSolar">Total Standalone Pumps Installed (Nos)</label><br>
+										<span class="spanSolar" id="cmpbTSAPI"
+											style="color: #e0296a;font-weight: bold;">
+											-
+										</span>
+
+									</div> -->
+								</div>
+								<!-- <div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Solar Capacity (MW)</label><br>
+										<span class="spanSolar" id="cmpbTSC" style="color: #e0296a;font-weight: bold;">
+											-
+										</span>
+
+									</div>
+								</div> -->
+
+
+							</div>
+							<div class="status_btn" style=" background: #e0296a;;">
+								<a data-toggle="modal" data-target="#comBdummy" href="#" title="Show More">State Wise
+									Details</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25" style="min-width: 47.333333%;">
+						<div class="md-card md-card-stats md-theme-default" style="border: 2px solid #fc9208;">
+							<div class="md-card-header md-card-header-icon md-card-header-blue">
+								<!-- <div class="card-icon"><img src="img/landing/images.png" class="img-icon"></div> -->
+								<p class="category">Component C</p>
+								<!-- <p style="font-size:x-small;text-align: center;"><span
+										style="color: red;">*</span>Integration with state portal is in progress.</p> -->
+										<p style="font-size:x-small;text-align: center;"><span style="color: red;">*</span> Achievements as on 30.04.2022 </p>
+							</div>
+							<div class="md-card-actions md-alignment-left">
+								<!-- <div class="col-md-3 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Sanctioned Individual Pump Solar (IPS)</label><br>
+										<span class="spanSolar" id="cmpcTGCPSdummy"
+											style="font-weight: bold;color: #fc9208;">
+											75650
+										</span>
+
+									</div>
+								</div> -->
+									<!-- <div class="stats">
+										<label class="labelSolar">Total Grid Connected Pumps Solarized</label><br>
+										<span class="spanSolar" id="cmpcTGCPS"
+											style="font-weight: bold;color: #fc9208;">
+											-
+										</span>
+
+									</div> -->
+
+									<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+										<div class="stats">
+											<label class="labelSolar">Total Sanctioned individual Pump Solar (IPS)</label><br>
+											<span class="spanSolar" id="cmpcTSCdummy" style="font-weight: bold;color: #fc9208;">
+												76150
+											</span>
+	
+										</div>
+									</div>
+
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Installed Individual Pump Solar (IPS)</label><br>
+										<span class="spanSolar" id="cmpcTSCdummy" style="font-weight: bold;color: #fc9208;">
+											1026
+										</span>
+
+									</div>
+								</div>
+								
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Sanctioned Feeder Level solar(FLS)</label><br>
+										<span class="spanSolar" id="cmpcTSCdummy" style="font-weight: bold;color: #fc9208;">
+											925427
+										</span>
+
+									</div>
+								</div>
+
+								<div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Installed Feeder Level solar(FLS)</label><br>
+										<span class="spanSolar" id="cmpcTSCdummy" style="font-weight: bold;color: #fc9208;">
+											0
+										</span>
+									</div>
+								</div>
+								
+								<!-- <div class="col-md-6 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Solar Capacity (MW)</label><br>
+										<span class="spanSolar" id="cmpcTSC" style="font-weight: bold;color: #fc9208;">
+											-
+										</span>
+
+									</div>
+								</div> -->
+
+								<!-- <div class="col-md-3 col-xs-6" style="border: 1px solid #eee;padding: 8px;">
+									<div class="stats">
+										<label class="labelSolar">Total Sanctioned Feeder Level solar(FLS) </label><br>
+										<span class="spanSolar" id="cmpcTSCdummy" style="font-weight: bold;color: #fc9208;">
+											0
+										</span>
+
+									</div>
+								</div> -->
+
+								
+
+							</div>
+							<!-- <div class="status_btn" style="    background: #fc9208;">
+								<a data-toggle="modal" data-target="#comC" href="#" title="Show More">State Wise
+									Details</a>
+							</div> -->
+							<div class="status_btn" style="background: #fc9208;">
+								<a data-toggle="modal" data-target="#comCdummy" href="#" title="Show More">State Wise
+									Details</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="modal fade" role="dialog" id="comA">
+			<div class="modal-dialog"> -->
+
+				<!-- Modal content-->
+				<!-- <div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="cmpaTable">
+								<caption>Component A</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Total Solar Plants Installed</th>
+										<th>Total Solar Capacity (MW)</th>
+
+									</tr>
+								</thead>
+								<tbody> -->
+
+									<!-- <tr>
+									<td>Andhra Pradesh</td>
+									<td>3000</td>
+									<td>5000</td>
+
+								</tr>
+								<tr>
+									<td>Andaman and Nicobar Islands</td>
+									<td>2000</td>
+									<td>5000</td>
+
+								</tr>
+								<tr>
+									<td>Arunachal Pradesh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Assam</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Bihar</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Chandigarh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Chattisgarh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Daman and Diu</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Delhi</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Dadra and Nagar Haveli</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Goa</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Gujarat</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Himachal Pradesh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Haryana</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Jharkhand</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Jammu and Kashmir</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Karnataka</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Kerala</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Lakshadweep Islands</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Meghalaya</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Maharashtra</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Mizoram</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Manipur</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Madhya Pradesh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Nagaland</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Odisha</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Punjab</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Pondicherry</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Rajasthan</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Sikkim</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Tamil Nadu</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Tripura</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Telangana</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Uttar Pradesh</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>Uttarakhand</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr>
+								<tr>
+									<td>West Bengal</td>
+									<td>-</td>
+									<td>-</td>
+
+								</tr> -->
+								
+							<!-- </tbody>
+							</table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div> -->
+		
+		<div class="modal fade" role="dialog" id="comAdummy">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="cmpaTabledummy">
+								<caption>Component A</caption>
+								<thead>
+									<tr>
+										<th>State</th> 
+										<th>Total Sanctioned <br> Solar Capacity (MW)</th>
+										<th>Total Installed <br> Solar Capacity (MW)</th>
+										<!-- <th></th>Total Sanctioned individual Pump Solar (IPS)</th>
+										<th></th>Total Installed individual Pump Solar (IPS)</th>
+										<th></th>Total Sanctioned Feeder Level solar(FLS)</th>
+										<th></th>Total Installed Feeder Level solar(FLS)</th> -->
+									</tr>
+								</thead>
+								<tbody>
+
+									  <tr>
+									<td>Andhra Pradesh</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								 
+								<tr>
+									<td>Arunachal Pradesh</td>
+									 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Assam</td>
+									 
+									<td>50</td>
+									<td>0</td>
+								</tr>
+								 
+								<tr>
+									<td>Chhattisgarh</td>
+									 
+									<td>30</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Delhi</td>
+									 
+									<td>62</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Gujarat</td> 
+									<td>500</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Goa</td> 
+									<td>50</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Haryana</td> 
+									<td>65</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Himachal Pradesh</td> 
+									<td>20</td>
+									<td>15.25</td>
+								</tr>
+								<tr>
+									<td>Jammu & Kashmir</td> 
+									<td>5</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Jharkhand</td> 
+									<td>50</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Karnataka</td> 
+									<td>500</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Kerala</td> 
+									<td>40</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Ladakh</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Madhya Pradesh </td> 
+									<td>300</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Maharashtra</td> 
+									<td>500</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Manipur</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Meghalaya</td> 
+									<td>5</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Nagaland</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Odisha</td> 
+									<td>500</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Puducherry</td> 
+									<td>7</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Punjab</td> 
+									<td>220</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Rajasthan</td> 
+									<td>1200</td>
+									<td>27.5</td>
+								</tr>
+								<tr>
+									<td>Tamil Nadu</td> 
+									<td>75</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Telangana</td> 
+									<td>500</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Tripura</td> 
+									<td>5</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Uttar Pradesh </td>  
+									<td>225</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Uttarakhand</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>West Bengal</td> 
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total</b></td> 
+									<td><b>4909</b></td>
+									<td><b>42.75</b></td>
+
+								</tr>
+								  
+								
+							</tbody>
+							</table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		
+		<!-- <div class="modal fade" role="dialog" id="comB">
+			<div class="modal-dialog"> -->
+
+				<!-- Modal content-->
+				<!-- <div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						<button onclick="exportTableToExcel('cmpbTable')" style="display: none;">Excel File</button>
+						<div class="popmore">
+							<table id="cmpbTable">
+								<caption>Component B</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Total Standalone Pumps Installed</th>
+										<th>Total Solar Capacity (MW)</th>
+
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody> -->
+
+								<!-- <tr>
+							<td>Andhra Pradesh</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Andaman and Nicobar Islands</td>
+							<td>2000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Arunachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Assam</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Bihar</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chandigarh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chattisgarh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Daman and Diu</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Delhi</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Dadra and Nagar Haveli</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Goa</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Gujarat</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Himachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Haryana</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jharkhand</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jammu and Kashmir</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Karnataka</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Kerala</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Lakshadweep Islands</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Meghalaya</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Maharashtra</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Mizoram</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Manipur</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Madhya Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Nagaland</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Odisha</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Punjab</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Pondicherry</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Rajasthan</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Sikkim</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tamil Nadu</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tripura</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Telangana</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttar Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttarakhand</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>West Bengal</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr> -->
+							<!-- </table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div> -->
+
+		<div class="modal fade" role="dialog" id="comBdummy">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						<button onclick="exportTableToExcel('cmpbTable')" style="display: none;">Excel File</button>
+						<div class="popmore">
+							<table id="cmpbTabledummy">
+								<caption>Component B</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Total Sanctioned Standalone <br>Pumps Installed (Nos)</th>
+										<th>Total Installed Standalone <br>Pumps (Nos)</th>
+										<!-- <th>Total Solar Capacity (MW)</th> -->
+
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr>
+								  <td>Andhra Pradesh</td> 
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							   
+							  <tr>
+								  <td>Arunachal Pradesh</td>
+								   
+								  <td>50</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Assam</td>
+								   
+								  <td>1000</td>
+								  <td>0</td>
+							  </tr>
+							   
+							  <tr>
+								  <td>Chhattisgarh</td>
+								   
+								  <td>20000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Delhi</td>
+								   
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Gujarat</td> 
+								  <td>3424</td>
+								  <td>459</td>
+							  </tr>
+							  <tr>
+								  <td>Goa</td> 
+								  <td>200</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Haryana</td> 
+								  <td>37000</td>
+								  <td>34917</td>
+							  </tr>
+							  <tr>
+								  <td>Himachal Pradesh</td> 
+								  <td>950</td>
+								  <td>251</td>
+							  </tr>
+							  <tr>
+								  <td>Jammu & Kashmir</td> 
+								  <td>5000</td>
+								  <td>103</td>
+							  </tr>
+							  <tr>
+								  <td>Jharkhand</td> 
+								  <td>11000</td>
+								  <td>6717</td>
+							  </tr>
+							  <tr>
+								  <td>Karnataka</td> 
+								  <td>10500</td>
+								  <td>314</td>
+							  </tr>
+							  <tr>
+								  <td>Kerala</td> 
+								  <td>100</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Ladakh</td> 
+								  <td>600</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Madhya Pradesh </td> 
+								  <td>57000</td>
+								  <td>7234</td>
+							  </tr>
+							  <tr>
+								  <td>Maharashtra</td> 
+								  <td>100000</td>
+								  <td>2439</td>
+							  </tr>
+							  <tr>
+								  <td>Manipur</td> 
+								  <td>150</td>
+								  <td>28</td>
+							  </tr>
+							  <tr>
+								  <td>Meghalaya</td> 
+								  <td>200</td>
+								  <td>35</td>
+							  </tr>
+							  <tr>
+								  <td>Nagaland</td> 
+								  <td>50</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Odisha</td> 
+								  <td>5700</td>
+								  <td>821</td>
+							  </tr>
+							  <tr>
+								  <td>Puducherry</td> 
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Punjab</td> 
+								  <td>12000</td>
+								  <td>6666</td>
+							  </tr>
+							  <tr>
+								  <td>Rajasthan</td> 
+								  <td>65000</td>
+								  <td>29014</td>
+							  </tr>
+							  <tr>
+								  <td>Tamil Nadu</td> 
+								  <td>6100</td>
+								  <td>1187</td>
+							  </tr>
+							  <tr>
+								  <td>Telangana</td> 
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Tripura</td> 
+								  <td>3100</td>
+								  <td>436</td>
+							  </tr>
+							  <tr>
+								  <td>Uttar Pradesh </td>  
+								  <td>20000</td>
+								  <td>6842</td>
+							  </tr>
+							  <tr>
+								  <td>Uttarakhand</td> 
+								  <td>338</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>West Bengal</td> 
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td><b>Total</b></td> 
+								  <td><b>359462</b></td>
+								  <td><b>97463</b></td>
+
+							  </tr>
+								
+							  
+						  </tbody>
+							</table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- <div class="modal fade" role="dialog" id="comC">
+			<div class="modal-dialog"> -->
+
+				<!-- Modal content-->
+				<!-- <div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="cmpcTable">
+								<caption>Component C</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Total Grid Connected Pumps Solarised</th>
+										<th>Total Solar Capacity (MW)</th>
+
+									</tr>
+								</thead>
+
+								<tbody>
+
+								</tbody> -->
+								<!-- <tr>
+							<td>Andhra Pradesh</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Andaman and Nicobar Islands</td>
+							<td>2000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Arunachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Assam</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Bihar</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chandigarh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chattisgarh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Daman and Diu</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Delhi</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Dadra and Nagar Haveli</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Goa</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Gujarat</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Himachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Haryana</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jharkhand</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jammu and Kashmir</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Karnataka</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Kerala</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Lakshadweep Islands</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Meghalaya</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Maharashtra</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Mizoram</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Manipur</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Madhya Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Nagaland</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Odisha</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Punjab</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Pondicherry</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Rajasthan</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Sikkim</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tamil Nadu</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tripura</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Telangana</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttar Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttarakhand</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>West Bengal</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr> -->
+							<!-- </table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div> -->
+
+		<div class="modal fade" role="dialog" id="comCdummy">
+			<div class="modal-dialog" style="width: 40%;">
+ 
+				<div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="cmpcTabledummy">
+								<caption>Component C</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<!-- <th>Individual Pumps Solarization</th>
+										<th>Feeder Level Solarization</th> -->
+										<th> Total Sanctioned individual Pump Solar (IPS)</th>
+										<th> Total Installed individual Pump Solar (IPS)</th>
+										<th> Total Sanctioned Feeder Level solar(FLS)</th>
+										<th> Total Installed Feeder Level solar(FLS)</th>
+
+									</tr>
+								</thead>
+
+								<tbody>
+
+									<tr>
+								  <td>Andhra Pradesh</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>50000</td>
+								  <td>0</td>
+
+							  </tr>
+							   
+							  <tr>
+								  <td>Arunachal Pradesh</td>
+								   
+								  <td>500</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Assam</td>								   
+								  <td>500</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							   
+							  <tr>
+								  <td>Chhattisgarh</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Delhi</td>
+								   
+								  <td>550</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Gujarat</td> 
+								  <td>7000</td>
+								  <td>0</td>
+								  <td>500</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Goa</td> 
+								  <td>11000</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Haryana</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>32927</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Himachal Pradesh</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Jammu & Kashmir</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Jharkhand</td> 
+								  <td>500</td>
+								  <td>0</td>
+								  <td>10000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Karnataka</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>250000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Kerala</td> 
+								  <td>100</td>
+								  <td>0</td>
+								  <td>2000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Ladakh</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Madhya Pradesh </td> 
+								  <td>20000</td>
+								  <td>0</td>
+								  <td>175000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Maharashtra</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>250000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Manipur</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Meghalaya</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>10000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Nagaland</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Odisha</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Puducherry</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Punjab</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>25000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Rajasthan</td> 
+								  <td>12500</td>
+								  <td>1026</td>
+								  <td>25000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Tamil Nadu</td> 
+								  <td>20000</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Telangana</td> 
+								  <td>0</td>
+								  <td>0</td>
+								  <td>65000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Tripura</td> 
+								  <td>2600</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Uttar Pradesh </td>  
+								  <td>0</td>
+								  <td>0</td>
+								  <td>30000</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>Uttarakhand</td> 
+								  <td>200</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td>West Bengal</td> 
+								  <td>700</td>
+								  <td>0</td>
+								  <td>0</td>
+								  <td>0</td>
+							  </tr>
+							  <tr>
+								  <td><b>Total</b></td> 
+								  <td><b>76150</b></td>
+								  <td><b>1026</b></td>
+								  <td><b>925427</b></td>
+								  <td><b>0</b></td>
+
+							  </tr>
+								
+							  
+						  </tbody>
+								 
+							</table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div id="disclaimer" class="modal fade" role="dialog" aria-modal="true" style="padding-right: 17px; display: block;">
+			<div class="modal-dialog disclaimerModal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">प्रधानमंत्री-कुसुम योजना के नाम पर धोखाधड़ी करने वाली वैबसाइटों से
+							सावधान</h4>
+					</div>
+					<div class="row modal-body text-center">
+						<p><b>मंत्रालय के संज्ञान में आया है कि कई फर्जी वेबसाइट और मोबाइल एप्लिकेशन आवेदकों से
+								प्रधानमंत्री किसान ऊर्जा सुरक्षा एवं उत्थान महाभियान (प्रधानमंत्री-कुसुम योजना) के नाम
+								पर किसानों से सोलर पम्प लगाने हेतु ऑनलाइन आवेदन पत्र भरने के साथ पंजीकरण शुल्क तथा पंप
+								की कीमत का ऑनलाइन भुगतान करने को कह रहे हैं। इनमें से कुछ फर्जी वेबसाइट डोमेन नाम *
+								.org, * .in, * .com में पंजीकृत हैं जैसे www.kusumyojanaonline.in.net,
+								www.pmkisankusumyojana.co.in, www.onlinekusamyojana.org.in, www.pmkisankusumyojana.com
+								और इसी तरह की कई अन्य वेबसाइटें हैं।<br><br>
+								इसलिए प्रधानमंत्री-कुसुम योजना के लिए आवेदन करने वाले सभी किसानों को सलाह दी जाती है कि
+								वे धोखाधड़ी करने वाली वेबसाइटों पर न जाएं तथा कोई भी भुगतान न करें। प्रधानमंत्री-कुसुम
+								योजना को राज्य सरकार के विभागों द्वारा कार्यान्वित किया जा रहा है। <br><br>
+								योजना की अधिक जानकारी के लिए नवीन और नवीकरणीय ऊर्जा मंत्रालय (MNRE) की आधिकारिक वेबसाइट
+								www.mnre.gov.in पर विजिट करें अथवा टोल फ्री नंबर 1800-180-3333 डायल करें !
+							</b></p>
+					
+					<div class="row" style="margin-top: 10%;">
+
+						<strong>सतर्क रहें धोखाधड़ी से बचें </strong>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="home">
+			<div class="col-md-8" style=" padding-left: 5px;    padding-right: 7px;">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img class="first1-slide" src="images/banner2.jpg" alt="First1 slide">
+
+						</div>
+						<div class="item">
+							<img class="first-slide" src="images/Component-A.PNG" alt="First slide">
+
+						</div>
+						<div class="item">
+							<img class="second-slide" src="images/Component-B.PNG" alt="Second slide">
+
+						</div>
+						<div class="item">
+							<img class="third-slide" src="images/Component-C.PNG" alt="Third slide">
+
+						</div>
+						<div class="item">
+							<video style="width: 100%; height:410px; background: black  no-repeat; background-size: cover;    border: 2px solid #1864bb;" controls poster="https://mnre.gov.in/img/documents/uploads/ea730c394a9c49a08a82be910f80edf0.jpg" muted preload="none" class="homeVideo">
+								<source src="https://mnre.gov.in/img/documents/uploads/f87388c6a64548229a4f565a78aa7698.mp4">
+							</video>
+
+						</div>
+					</div>
+
+				</div><!-- /.carousel -->
+			</div>
+
+
+			<div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25 col-md-4 col-xs-12">
+				<div class="md-card md-card-stats md-theme-default" style="    margin-top: 0;    border: 2px solid #11b7cc;">
+					<div class="md-card-header md-card-header-icon md-card-header-blue">
+						<!-- <div class="card-icon"><img src="img/landing/images.png" class="img-icon"></div> -->
+						<p class="category">Total Solar Generation (MWh)</p>
+						<p style="font-size:x-small;text-align: center;"><span style="color: red;">*</span>Integration
+							with
+							state portal is in progress.</p>
+						<!-- <p class="spanval2">10000</p> -->
+					</div>
+					<div class="md-card-actions md-alignment-left">
+						<div class="col-md-12" style="border: 1px solid #eee;padding: 8px;">
+							<div class="stats sta">
+								<label class="labelSolar">Component A </label> :
+								<span class="spanSolar2" style="color: #11b7cc;" id="cmpaTSG">-</span><br>
+								<label class="labelSolar">Component B </label> :
+								<span class="spanSolar2" style="color: #11b7cc;" id="cmpbTSG">-</span><br>
+								<label class="labelSolar">Component C </label> :
+								<span class="spanSolar2" style="color: #11b7cc;" id="cmpcTSG">-</span>
+
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="status_btn" style="    background: #11b7cc;">
+						<a data-toggle="modal" data-target="#totalPlant" href="#" title="Show More">State Wise
+							Details</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25 col-md-4 col-xs-12">
+				<div class="md-card md-card-stats md-theme-default" style="border: 2px solid #e0296a;">
+					<div class="md-card-header md-card-header-icon md-card-header-blue">
+						<!-- <div class="card-icon"><img src="img/landing/images.png" class="img-icon"></div> -->
+						<p class="category">Total Carbon Footprint Reduced (Tons)</p>
+						<p style="font-size:x-small;text-align: center;"><span style="color: red;">*</span>Integration
+							with
+							state portal is in progress.</p>
+						<!-- <p class="spanval2">10000</p> -->
+					</div>
+					<div class="md-card-actions md-alignment-left">
+						<div class="col-md-12" style="border: 1px solid #eee;padding: 8px;">
+							<div class="stats sta">
+								<label class="labelSolar">Component A </label> :
+								<span class="spanSolar2" style="color: #e0296a;" id="cmpaTCFR">-</span><br>
+								<label class="labelSolar">Component B </label> :
+								<span class="spanSolar2" style="color:#e0296a;" id="cmpbTCFR">-</span><br>
+								<label class="labelSolar">Component C </label> :
+								<span class="spanSolar2" style="color: #e0296a;" id="cmpcTCFR">-</span>
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="status_btn" style="  background: #e0296a;">
+						<a data-toggle="modal" data-target="#modal2" href="#" title="Show More">State Wise
+							Details</a>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+		<div class="modal fade" role="dialog" id="totalPlant">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="TSGTable">
+								<caption>Total Solar Generation (MWh)</caption>
+								<thead>
+									<tr>
+										<th>State</th>
+										<th>Component - A</th>
+										<th>Component - B</th>
+										<th>Component - C</th>
+
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+								<!-- <tr>
+							<td>Andhra Pradesh</td>
+							<td>2000</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Andaman and Nicobar Islands</td>
+							<td>2000</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Arunachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Assam</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Bihar</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chandigarh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chattisgarh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Daman and Diu</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Delhi</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Dadra and Nagar Haveli</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Goa</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Gujarat</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Himachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Haryana</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jharkhand</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jammu and Kashmir</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Karnataka</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Kerala</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Lakshadweep Islands</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Meghalaya</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Maharashtra</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Mizoram</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Manipur</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Madhya Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Nagaland</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Odisha</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Punjab</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Pondicherry</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Rajasthan</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Sikkim</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tamil Nadu</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tripura</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Telangana</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttar Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttarakhand</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>West Bengal</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr> -->
+							</table>
+
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="modal fade" role="dialog" id="modal2">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class=" modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="popmore">
+							<table id="TCFRTable">
+								<caption>Total Carbon Footprint Reduced (Tons)</caption>
+								<thead>
+
+									<tr>
+										<th>State</th>
+										<th>Component - A</th>
+										<th>Component - B</th>
+										<th>Component - C</th>
+
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+								<!-- <tr>
+							<td>Andhra Pradesh</td>
+							<td>2000</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Andaman and Nicobar Islands</td>
+							<td>2000</td>
+							<td>3000</td>
+							<td>5000</td>
+
+						</tr>
+						<tr>
+							<td>Arunachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Assam</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Bihar</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chandigarh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Chattisgarh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Daman and Diu</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Delhi</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Dadra and Nagar Haveli</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Goa</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Gujarat</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Himachal Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Haryana</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jharkhand</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Jammu and Kashmir</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Karnataka</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Kerala</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Lakshadweep Islands</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Meghalaya</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Maharashtra</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Mizoram</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Manipur</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Madhya Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Nagaland</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Odisha</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Punjab</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Pondicherry</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Rajasthan</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Sikkim</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tamil Nadu</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Tripura</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Telangana</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttar Pradesh</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>Uttarakhand</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr>
+						<tr>
+							<td>West Bengal</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+
+						</tr> -->
+							</table>
+						</div>
+						<div class="logincon">
+
+							<p></p>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- //main-slider -->
+		<!-- //top-header and slider -->
+		<!-- top-brands -->
+
+		<!-- contact -->
+		<!-- //new -->
+		<!-- //footer -->
+		<div class="footer">
+			<!-- scroll_top_btn -->
+			<script type="text/javascript">
+				$(document).ready(function () {
+
+					var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+					};
+
+
+					$().UItoTop({
+						easingType: 'easeOutQuart'
+					});
+
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+			<div class="w3_footer_grids">
+				<div class="col-md-3 w3_footer_grid">
+					<h3>PM-KUSUM</h3>
+
+					<ul class="address">
+						<p> Ministry of New and Renewable Energy (MNRE) has launched the Pradhan Mantri Kisan Urja
+							Suraksha evam Utthan Mahabhiyan (PM KUSUM) Scheme for farmers.</p>
+				</ul></div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Contact</h3>
+
+					<ul class="address">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Block-14, CGO Complex,
+							Lodhi
+							Road
+							<span>New Delhi - 110003.</span>
+						</li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:jethani.jk@nic.in">jethani [dot] jk [at] nic [dot] in</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>011 - 24365666</li>
+					</ul>
+				</div>
+				<!-- <div class="col-md-3 w3_footer_grid">
+					<h3>Information</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQs</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li>
+					</ul>
+				</div> -->
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Info</h3>
+					<ul class="info">
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="landing.html">Home</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="landing-about.html">About
+								Scheme</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="landing-events.html">Recent
+								Event/
+								Activities</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="landing-faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Supported By</h3>
+
+					<img src="images/PSR2.jpg" class="img_icon">
+					<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#login">Login</a></li> -->
+
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+
+			<div class="footer-copy">
+
+				<div>
+					<p>Developed by HKRP Innovations LLP under the PSR Programme. KPMG in India is the lead
+						implementing
+						partner for this Programme.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- <script>
+		window.onscroll = function() {myFunction()};
+		
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+		
+		function myFunction() {
+			//debugger
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+		
+		</script> -->
+	<!-- <div class="footer-botm">
+			<div class="container">
+				<div class="w3layouts-foot">
+					<ul>
+						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="payment-w3ls">		
+					<img src="img/landing//card.png" alt=" " class="img-responsive">
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div> -->
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<!-- <script src="js/libs/jquery-3.6.0.min.js"></script> -->
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/underscore-min.js" type="text/javascript"></script>
+	<script src="js/SmartNotification.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!-- top-header and slider -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#disclaimer").modal("show");
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+
+	<!-- //here ends scrolling icon -->
+	<script src="js/minicart.min.js"></script>
+	<script>
+		// Mini Cart
+		paypal.minicart.render({
+			action: '#'
+		});
+
+		if (~window.location.search.indexOf('reset=true')) {
+			paypal.minicart.reset();
+		}
+	</script>
+	<script type="text/javascript">
+		window.onscroll = function () {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+	<!-- main slider-banner -->
+	<script src="js/skdslider.min.js"></script>
+	<link href="css/skdslider.css" rel="stylesheet">
+	<script src="js/loadingoverlay.min.js" type="text/javascript"></script>
+	<script src="js/mqttws31.min.js" type="text/javascript"></script>
+	<script src="js/static.js" type="text/javascript"></script>
+	<script src="js/loginpop.js"></script>
+	<script src="js/utils.js" type="text/javascript"></script>
+	<script src="js/internal-external.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('#home').skdslider({
+				'delay': 5000,
+				'animationSpeed': 2000,
+				'showNextPrev': true,
+				'showPlayButton': true,
+				'autoSlide': true,
+				'animationType': 'fading'
+			});
+
+			jQuery('#responsive').change(function () {
+				debugger
+				$('#responsive_wrapper').width(jQuery(this).val());
+			});
+
+		});
+	</script>
+	<style>
+		.rw-conversation-container .rw-header{background-color: #CACA0F;}
+		.rw-messages-container .rw-message .rw-client{background-color: #CACA0F;}
+	</style>
+	<script>!(function () {
+		let e = document.createElement("script"),
+		t = document.head || document.getElementsByTagName("head")[0];
+		(e.src =
+		"https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+		// Replace 1.x.x with the version that you want
+		(e.async = !0),
+		(e.onload = () => {
+			window.WebChat.default(
+			{
+				initPayload: '/greet',
+				customData: { language: "en" },
+				socketUrl: "http://localhost:5005",
+				title: 'Saathi'
+				// add other props here
+			},
+			null
+			);
+		}),
+		t.insertBefore(e, t.firstChild);
+	})();
+  </script>
+	
+
+</body>
+
+</html>
